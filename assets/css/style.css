@@ -1,0 +1,312 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-theme {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.card-theme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.theme-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-outline-primary {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.auth-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem 0;
+    margin-top: 3rem;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+.selected-theme {
+    border: 3px solid var(--secondary-color) !important;
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.registration-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    color: #666;
+    font-weight: bold;
+}
+
+.step.active .step-number {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.step.completed .step-number {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.step-title {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.step.active .step-title {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.step.completed .step-title {
+    color: #4CAF50;
+}
+
+.step:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    right: -10%;
+    height: 2px;
+    background-color: #e0e0e0;
+    z-index: -1;
+}
+
+.step.completed:not(:last-child):after {
+    background-color: #4CAF50;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+body {
+    background: linear-gradient(120deg,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 100%);
+    min-height: 100vh;
+}
+.card-article {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #fff;
+}
+.card-article:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.35);
+    background: rgba(255,255,255,0.10);
+}
+.card-article .card-img-top {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    height: 220px;
+    object-fit: cover;
+    background: #222;
+}
+.badge-theme {
+    background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 0.55em 1.2em;
+    box-shadow: 0 0 8px 2px rgba(221,36,118,0.25), 0 2px 8px 0 rgba(0,0,0,0.10);
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    border: 2px solid #fff2;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #222;
+}
+.card-description {
+    font-size: 1rem;
+    color: #555;
+}
+.card-date {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+.btn-futur {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-futur:hover {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: #fff;
+}
+.search-bar {
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+}
+
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background: #343a40;
+    color: #fff;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background: #495057;
+}
+
+.dashboard-header {
+    background: #fff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+
+.img-thumb {
+    max-width: 80px;
+    max-height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .step-title {
+        font-size: 0.8rem;
+    }
+}
+
+
